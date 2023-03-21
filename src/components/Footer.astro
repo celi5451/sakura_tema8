@@ -3,24 +3,52 @@
 
 <footer>
   <div class="container">
-    <p>2023 My Website</p>
+    <div class="logo">
+      <a href="/" aria-label="Hjem"><img class="logo" src="img/logo.png" alt="logo" /></a>
+    </div>
+    <div class="contact">
+      <p class="bold uppercase">Contact</p>
+      <p>c/o Embassy of Japan Havneholmen 25, 9F</p>
+      <p>1561 København V</p>
+      <p>T: +45 33 11 33 77</p>
+      <p>E: info.cph@ch.mofa.go.jp</p>
+    </div>
+    <div class="newsletter">
+      <p class="bold uppercase">newsletter</p>
+      <form action="#" method="POST">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
+
+  <style>
+    footer {
+      margin-top: auto;
+      background-color: #a7b8c9;
+      font-size: 1rem;
+      color: #000;
+      width: 100%;
+      padding-top: 2%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr;
+      justify-content: center;
+      line-height: 1;
+      gap: 1.5rem;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .uppercase {
+      text-transform: uppercase;
+    }
+    .logo {
+      width: 60%;
+      padding: 10%;
+    }
+  </style>
 </footer>
-
-<style>
-  footer {
-    position: fixed;
-    bottom: 0;
-    background-color: #a7b8c9;
-    padding: 2rem 0;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
-    width: 100%;
-  }
-
-  .container {
-    margin: auto;
-    margin-bottom: sticky;
-  }
-</style>
