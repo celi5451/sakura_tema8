@@ -1,42 +1,28 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Header />
-    <main>
-      <div class="splash_tekst">
-        <h1>Sakura Festival Copenhagen</h1>
-        <h2>Spring 2023</h2>
-      </div>
-    </main>
-    <Footer />
-  </body>
-  <style>
-    body {
-      background-image: url(img/background.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    .splash_tekst {
-      text-align: center;
-      color: #fff;
-    }
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 3rem;
-      font-style: italic;
-    }
-  </style>
-</html>
+<MainLayout>
+  <div class="splash_tekst">
+    <h1>Sakura Festival Copenhagen</h1>
+    <h2>Spring 2023</h2>
+  </div>
+</MainLayout>
+<style>
+  body {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .splash_tekst {
+    text-align: center;
+    color: #fff;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+    font-style: italic;
+  }
+</style>
