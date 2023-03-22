@@ -30,14 +30,15 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
         <img src="img/sakura2.png" alt="sakura2" />
         <img src="img/tree.jpg" alt="tree" />
       </div>
-      <img class="span_2_col" src="img/lamper.jpg" alt="" />
-      <img class="span_2_row" src="img/vifte.jpg" alt="" />
+      <img class="span_2_col" src="img/lamper.jpg" alt="lamper" />
+      <img class="span_2_row" src="img/vifte.jpg" alt="vifte" />
     </div>
   </div>
 </MainLayout2>
 <style>
   .wrapper_about {
     margin: 7%;
+    height: 2500px;
   }
   h1 {
     font-size: 4rem;
@@ -67,7 +68,7 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     display: grid;
     max-height: 300px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 2rem;
   }
   .col_2 {
@@ -75,8 +76,8 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     grid-gap: 2rem;
   }
   .span_2_col {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
     max-height: fit-content;
   }
   .span_2_row {
