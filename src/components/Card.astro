@@ -1,0 +1,21 @@
+---
+import Button from "./Button.astro";
+const { title, description, image } = Astro.props;
+---
+
+<div class="program_element">
+  <img src={`img/${image}`} alt="" />
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <Button />
+</div>
+
+<style>
+  .program_element {
+    margin: 1rem;
+  }
+  img {
+    width: 100%;
+    max-height: 300px;
+  }
+</style>
