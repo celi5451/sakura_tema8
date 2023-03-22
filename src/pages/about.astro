@@ -34,27 +34,8 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
       <img class="span_2_row" src="img/vifte.jpg" alt="" />
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-item square">
-      <img src="img/sakura2.png" />
-    </div>
-    <div class="grid-item square">
-      <img src="img/tree.jpg" />
-    </div>
-    <div class="grid-item wide">
-      <img src="img/lamper.jpg.jpg" />
-    </div>
-    <div class="grid-item tall">
-      <img src="img/vifte.jpg.jpg" />
-    </div>
-  </div>
 </MainLayout2>
 <style>
-  body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/background.png);
-    background-size: cover;
-  }
-
   .wrapper_about {
     margin: 7%;
   }
@@ -80,17 +61,18 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     width: 100%;
     object-fit: cover;
     display: block;
-    max-height: 300px;
     overflow: hidden;
-    margin: 1rem;
   }
   .img_grid {
     display: grid;
+    max-height: 300px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
   }
   .col_2 {
     display: flex;
+    grid-gap: 2rem;
   }
   .span_2_col {
     grid-column: 2 / span 1;
@@ -113,20 +95,5 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .square {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-  }
-
-  .wide {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 2;
-  }
-
-  .tall {
-    grid-row: 1 / span 2;
-    grid-column: 2 / span 1;
   }
 </style>
