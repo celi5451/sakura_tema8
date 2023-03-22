@@ -1,5 +1,6 @@
 ---
 import MainLayout2 from "../layouts/MainLayout2.astro";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout2>
@@ -10,8 +11,17 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     </div>
     <h2 class="navigation">Music / Talks / Events / Performances</h2>
     <h3>Program Saturday 22/04 2023</h3>
+    <div class="program_grid">
+      <div class="program_element">
+        <img src="img/square.jpg" alt="" />
+        <h3>Titel på program element</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem, nostrum perspiciatis voluptas necessitatibus quisquam magni adipisci reprehenderit qui quaerat impedit atque sit culpa dicta! Provident eum autem ab alias?</p>
+        <Button />
+      </div>
+    </div>
   </div>
 </MainLayout2>
+
 <style>
   body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/background.png);
@@ -44,4 +54,12 @@ import MainLayout2 from "../layouts/MainLayout2.astro";
     font-size: 1rem;
     text-align: center;
   }
+  .program_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .program_element {
+    margin: 1rem;
+  }
+  
 </style>
